@@ -106,11 +106,11 @@
   }
 
   const selectOneTyped = document.querySelector('.typedOnce');
-  if (selectTyped) {
-    let typed_strings = selectOneTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
+  if (selectOneTyped) {
+    let typed_once_strings = selectOneTyped.getAttribute('data-typed-items');
+    typed_once_strings = typed_once_strings.split(',');
+    new Typed('.typedOnce', {
+      strings: typed_once_strings,
       loop: false,
       typeSpeed: 100,
       backSpeed: 50,
